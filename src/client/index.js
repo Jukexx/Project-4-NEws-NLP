@@ -7,7 +7,6 @@ import './styles/form.scss';
 import './styles/footer.scss';
 import './styles/header.scss';
 
-console.log("Running!");
 
 export * from "./js/namechecker";
 export * from "./js/formhandler";

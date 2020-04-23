@@ -1,9 +1,9 @@
-function nameSubmit(event) {
+async function nameSubmit(event) {
     // Receive text value
     const nameToCheck = document.querySelector('#name').value;
-    const getWelcomings = JSON.stringify(getNameChecked(`/getwelcomings?name=${nameToCheck}`));
-
-    return true;
+    const nameResponse = await getNameChecked(`/getwelcomings?name=${nameToCheck}`);
+    updateUI(nameResponse);
+    return nameResponse;
 }
 
 function updateUI(name){
@@ -17,7 +17,7 @@ const getNameChecked = async (url = '') => {
     try {
         // Transform into JSON
         const nameCheckedResponse = await request.json()
-        updateUI(nameCheckedResponse);
+        return nameCheckedResponse
     }
     catch (error) {
         console.log("error", error);

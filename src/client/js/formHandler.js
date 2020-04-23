@@ -1,6 +1,6 @@
 import { nameSubmit } from './nameChecker'
 
-function handleSubmit(submitStatement) {
+async function handleSubmit(submitStatement) {
     submitStatement.preventDefault()
     nameSubmit();
     // Receive text value
@@ -44,4 +44,5 @@ function updateUI(data){
 
                                                         Text: ${data.text}`
 }
+
 export { handleSubmit }
