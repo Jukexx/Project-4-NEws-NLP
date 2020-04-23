@@ -77,11 +77,13 @@ function getName(req, res) {
   res.send({message: userWelcome});
 }
 
+//COMMENT THIS FOR JEST TESTING
 app.listen(5000, function () {
     console.log('Example app listening on port 5000!')
 })
 
-//designates what port the app will listen to for incoming requests
+// TO TEST JEST REMOVE COMMENTS BELLOW designates what port the app will listen to for incoming requests
+
 // app.get(`/test`, async (req, res) => {
 //   res.status(200).json({ message: 'pass!' })
 // })

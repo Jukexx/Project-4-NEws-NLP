@@ -1,3 +1,13 @@
+# TO RUN THE PROJECT
+1- Export all files or clone the repository:
+2- run npm install
+3- run server and test it
+
+# JEST TESTING INSTRUCTIONS
+
+If you wanna test jest run npm test, both client files should pass the test, to test the node Js go to server/index.js follow the instruction on the last line of server/index.js.
+
+
 # Project Instructions
 
 This repo is your starter code for the project. It is the same as the starter code we began with in lesson 2. Install and configure Webpack just as we did in the course. Feel free to refer to the course repo as you build this one, and remember to make frequent commits and to create and merge branches as necessary!
